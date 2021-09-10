@@ -1,13 +1,10 @@
 Python programming:
 
 print("Walcom to the tip calculator.\n")
-bill = input("What is your total bill? \n")
-bill = float(bill)
-precentage = input("What percentage tip you would like to give? (any number between 1-100)\n")
-precentage = float(precentage)
-split = input("And for the last question, how many people are share the bill?? \n")
-split = float(split)
+bill = float(input("What is your total bill? \n"))
+precentage = int(input("What percentage tip you would like to give? (any number between 1-100) \n"))
+split = int(input("And for the last question, how many people are share the bill?? \n"))
 
 tip = bill * (1 + precentage / 100)
-bill_split = round(tip / split,2)
+bill_split = round(tip / split)
 print(f"Each person need to pay: {bill_split} Shekels.")
